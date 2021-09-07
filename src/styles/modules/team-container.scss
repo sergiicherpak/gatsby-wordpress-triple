@@ -1,0 +1,246 @@
+.team-container {
+  background: $slightGray;
+  padding: 36px 24px 24px;
+  z-index: 2;
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px;
+  }
+
+  .team-member-container {
+    margin-top: 24px;
+
+    &:hover {
+      .member-image {
+        object-position: 40% 20%;
+        transform: scale(1.03);
+        cursor: pointer;
+      }
+    }
+
+    .modal__close:before {
+      color: #000;
+
+      @media (max-width: 768px) {
+        color: #fff;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .modal__container {
+        max-width: 900px;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .name-and-title,
+  .team-member-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name {
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+  }
+
+  .title {
+    font-size: 14px;
+    margin-top: 6px;
+    color: #000;
+  }
+
+  .team-image-container {
+    position: relative;
+  }
+
+  .member-image {
+    transition: 0.6s;
+    margin-top: 12px;
+    height: 240px;
+    object-fit: cover;
+    object-position: 40% 15%;
+    width: 100%;
+  }
+
+  .arrow {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+  }
+  @media (min-width: 768px) {
+    .rest-of-the-team {
+      margin-top: 24px;
+    }
+
+    .rest-of-the-team,
+    .three-up {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 24px;
+      row-gap: 24px;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .company-page-section.leadership {
+    background: $slightGray;
+    padding: 48px;
+
+    .section-copy {
+      width: 70%;
+    }
+  }
+
+  .team-container {
+    padding: 0 72px 72px;
+
+    .rest-of-the-team {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      row-gap: 48px;
+      align-items: end;
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .team-container {
+    .three-up {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .rest-of-the-team {
+      margin-top: 64px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .company-page-section.leadership {
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
+
+  .team-container {
+    padding-left: calc(8vw + 24px);
+    padding-right: calc(8vw + 24px);
+  }
+}
+
+.modal-contain {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+
+  .left,
+  .right {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    float: left;
+    height: 100%;
+    position: relative;
+  }
+
+  .team_member_details {
+    width: 50%;
+    left: 0;
+    position: relative;
+    padding: 3% 5%;
+    margin: auto 0;
+    text-align: left;
+
+    .bio-inner {
+      .bio,
+      .position,
+      .post-title {
+        color: #fff;
+        opacity: 1;
+        -ms-transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        -ms-transition: all 1.1s cubic-bezier(0.2,1,.2,1) 0.55s;
+        -webkit-transition: all 1.1s cubic-bezier(0.2,1,.2,1) 0.55s;
+        transition: all 1.1s cubic-bezier(0.2,1,.2,1) 0.55s;
+      }
+
+      .post-title {
+        margin-bottom: 30px;
+        letter-spacing: -0.021em;
+        line-height: 1.5;
+      }
+
+      .position {
+        line-height: 1.25;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+      }
+
+      .bio {}
+    }
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+  }
+
+  .team_member_picture {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.1);
+    .team_member_image_bg_cover {
+      -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+      transform: scaleX(0);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 1001;
+      left: -2px;
+      top: 0;
+      -ms-transform-origin: left;
+      -webkit-transform-origin: left;
+      transform-origin: left;
+      background-color: #f2f2f2;
+      -webkit-transition: -webkit-transform 1s cubic-bezier(0.25,1,.2,1);
+      transition: transform 1s cubic-bezier(0.25,1,.2,1);
+    }
+    .team_member_picture_wrap {
+      overflow: hidden;
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: 100%;
+      position: absolute;
+      .team_member_image {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-size: cover;
+        -webkit-transition: -webkit-transform 15s cubic-bezier(.15,0,.7,1),opacity 0.3s;
+        transition: transform 15s cubic-bezier(.15,0,.7,1),opacity 0.3s;
+        opacity: 0;
+        background-position: center top;
+      }
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}

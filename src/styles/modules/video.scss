@@ -1,0 +1,403 @@
+.price {
+  list-style-type: none;
+  border: 0 solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+}
+
+.price .header {
+  background-color: #fff;
+  color: black;
+  font-size: 30px;
+  height: 68px;
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 20px!important;
+  padding-right: 20px!important;
+}
+
+.price li {
+  color: black;
+  padding: 10px 20px 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.price .white {
+  background-color: #fff;
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.price .subtext {
+  min-height: 75px;
+  text-align: left;
+}
+
+.price .bottom_subtext {
+  min-height: 170px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.price .first_color {
+  background-color: #F47B20;
+  font-size: 18px;
+  text-align: left;
+  color: white;
+}
+
+.price .second_color {
+  background-color: #F15C2C;
+  font-size: 18px;
+  text-align: left;
+  color: white;
+}
+
+.price .third_color {
+  background-color: #ED79B0;
+  font-size: 18px;
+  text-align: left;
+  color: white;
+}
+
+.inner_bubble_text {
+  height: 100px;
+  font-weight: 500;
+  padding-left: 20px!important;
+  padding-right: 20px!important;
+}
+
+.zoom {
+  box-shadow: -10px 10px 5px rgba(0,0,0,0.6);
+  -moz-box-shadow: -10px 10px 5px rgba(0,0,0,0.6);
+  -webkit-box-shadow: -10px 10px 5px rgba(0,0,0,0.6);
+  -o-box-shadow: -10px 10px 5px rgba(0,0,0,0.6);
+  border-radius: 15px;
+}
+
+.zoom:hover {
+  transform: scale(1.15);
+  box-shadow: -10px 10px 5px rgba(0,0,0,0.6);
+  -moz-box-shadow: -10px 10px 5px rgba(0,0,0,0.6);
+  -webkit-box-shadow: -10px 10px 5px rgba(0,0,0,0.6);
+  -o-box-shadow: -10px 10px 5px rgba(0,0,0,0.6);
+  border-radius: 15px;
+}
+
+.main-container-inner .entry-content {
+  .video-hero {
+    background: #000;
+    background: url("/images/top_gradient.png") no-repeat center;
+    background-size: cover;
+    padding-top: 32px;
+    min-height: inherit;
+    padding-bottom: 32px;
+
+    .wp-block-group__inner-container {
+      padding-top: 0;
+      max-width: 1244px;
+      margin: 0 auto;
+
+      .wp-block-image {
+        width: 268px;
+        margin: 0 auto 32px;
+      }
+
+      p {
+        text-align: left;
+        width: 800px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.5;
+        font-size: 18px;
+        margin-bottom: 32px;
+      }
+    }
+    @media (max-width: 1024px) {
+      .wp-block-group__inner-container {
+        .wp-block-image {
+          max-width: 248px;
+        }
+      }
+    }
+  }
+
+  .toyota {
+    max-width: 1180px;
+    margin-bottom: 48px;
+
+    .wp-block-image {
+      margin-top: 40px;
+    }
+
+    .wp-block-buttons {
+      .wp-block-button {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    @media (max-width: 1024px) {
+      margin-left: 0;
+      margin-right: 0;
+
+      .wp-block-image {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+    @media (min-width: 767px) and (max-width: 1024px) {
+      .wp-block-image {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+      }
+    }
+    @media (max-width: 767px) {
+      margin-left: 0;
+      margin-right: 0;
+
+      .wp-block-image {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .pricingChart {
+    background-image: url("/images/ad_type_background_gradient.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 89px;
+    padding-top: 58px;
+
+    .wp-block-columns.alignwide {
+      max-width: 1072px;
+
+      .price {
+        .header {
+          background-color: #fff;
+          color: black;
+          font-size: 30px;
+          height: 68px;
+          text-align: left;
+          padding: 20px;
+          position: relative;
+          font-weight: 500;
+
+          &:after {
+            content: '';
+            width: 35%;
+            max-width: 100px;
+            background-color: #F47B20;
+            height: 3px;
+            position: absolute;
+            bottom: 0;
+            left: 20px;
+            margin-top: 10px;
+          }
+        }
+
+        .subtext {
+          font-size: 18px;
+          color: #000;
+          padding: 10px 20px 20px;
+          font-weight: 500;
+        }
+
+        .first_color,
+        .second_color,
+        .third_color {
+          padding-top: 10px;
+          padding-bottom: 20px;
+
+          p {
+            font-size: 18px;
+            margin-top: -10px;
+          }
+
+          .h2 {
+            font-size: 65px;
+            line-height: 1.4;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .wp-block-column:nth-child(2) {
+        .header:after {
+          background-color: #F15C2C;
+        }
+      }
+
+      .wp-block-column:nth-child(3) {
+        .header:after {
+          background-color: #ED79B0;
+        }
+      }
+    }
+    @media (max-width: 1024px) {
+      padding: 48px 20px;
+
+      .wp-block-columns.alignwide {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .wp-block-column:last-child {
+          margin-left: 0;
+          margin-top: 40px;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      padding-top: 20px;
+
+      .wp-block-columns.alignwide {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        .wp-block-column {
+          margin-top: 40px;
+        }
+
+        .wp-block-column:nth-child(even) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .what-you-are {
+    background-image: url("/images/user_type_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 438px;
+    margin-bottom: -64px;
+    padding-bottom: 64px;
+
+    h1.alignwide {
+      max-width: 1024px;
+      padding-left: 0!important;
+      padding-right: 0!important;
+      color: #fff;
+      padding-top: 33px;
+      margin-bottom: 24px;
+      @media (min-width: 1024px) {
+        font-size: 36px;
+      }
+      @media (min-width: 1280px) {
+        font-size: 48px;
+      }
+      @media (min-width: 1440px) {
+        font-size: 64px;
+      }
+      @media (min-width: 1600px) {
+        font-size: 80px;
+      }
+    }
+
+    .wp-block-columns.alignwide {
+      max-width: 1024px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .price {
+      background: #fff;
+
+      .header {
+        text-align: left;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        position: relative;
+        margin-bottom: 20px!important;
+
+        &:after {
+          content: '';
+          width: 35%;
+          background-color: #F47B20;
+          height: 3px;
+          position: absolute;
+          bottom: -5px;
+          left: 20px;
+          margin-top: 10px;
+        }
+      }
+
+      .inner_bubble_text {
+        font-size: 18px;
+      }
+    }
+
+    .wp-block-column:nth-child(2) {
+      .header:after {
+        background-color: #F15C2C;
+      }
+    }
+
+    .wp-block-column:nth-child(3) {
+      .header:after {
+        background-color: #ED79B0;
+        width: 25%;
+      }
+    }
+
+    .learn-more-btn {
+      padding-bottom: 58px!important;
+      padding-left: 20px!important;
+      padding-right: 20px!important;
+
+      a {
+        color: #F47B20;
+        font-size: 17px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+    @media (max-width: 1024px) {
+      h1.alignwide {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      .wp-block-columns.alignwide {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 20px;
+        margin-right: 20px;
+
+        .price {
+          margin-bottom: 20px;
+        }
+
+        .wp-block-column:last-child {
+          margin-left: 0;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      .wp-block-columns.alignwide {
+        grid-template-columns: 1fr;
+
+        .price {
+          margin: 20px;
+        }
+
+        .wp-block-column:nth-child(even) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

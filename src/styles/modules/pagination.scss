@@ -1,0 +1,38 @@
+.pagination {
+  text-align: center;
+  padding: 0 24px 64px;
+  align-items: center;
+  flex-direction: column;
+
+  .nav {
+    li {
+      display: inline-flex;
+      font-size: 0.75rem;
+      font-weight: 800;
+
+      a {
+        color: #333;
+        cursor: pointer;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 14px;
+        text-decoration: none;
+
+        &:hover {
+          color: #ff6418;
+        }
+      }
+
+      &.active {
+        a {
+          color: #fff;
+          box-shadow: 0 6px 15px rgba(0, 0, 0, 0.16);
+          background-color: #505050;
+          border-radius: 4px;
+          margin: 0 8px;
+        }
+      }
+    }
+  }
+}

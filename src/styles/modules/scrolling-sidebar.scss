@@ -1,0 +1,26 @@
+.scrolling-sidebar {
+  background: linear-gradient(77.24deg, #f15c2c 14.56%, #f47b20 88.29%);
+  writing-mode: vertical-rl;
+  transform: rotate(0deg);
+  color: white;
+  padding: 48px 12px;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  @media (min-width: 1024px) {
+    display: none;
+  }
+
+  .sticky-text {
+    transform: rotate(-180deg);
+    border: 0;
+    color: white;
+    position: sticky;
+    top: 100px;
+    right: 0;
+    display: flex;
+    align-items: center;
+  }
+}

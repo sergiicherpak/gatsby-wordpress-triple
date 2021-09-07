@@ -1,0 +1,81 @@
+.main {
+  .main-container {
+    padding-top: 78px;
+    overflow: hidden;
+
+    .main-container-inner {
+      background: #fff;
+
+      .page-title {
+        margin: 0 auto 32px;
+        max-width: 800px;
+        padding-top: 48px;
+        //display: none; // The genesis setting about hide title
+        @media (min-width: 1024px) {
+          font-size: 48px;
+        }
+      }
+
+      .entry-content {
+        margin: 0 auto;
+        max-width: 800px;
+        line-height: 1.875rem;
+        padding-bottom: 64px;
+
+        h1 {
+          @media (min-width: 1024px) {
+            font-size: 48px;
+          }
+        }
+
+        h2 {
+          @media (min-width: 1024px) {
+            font-size: 40px;
+          }
+        }
+
+        h2,
+        h3 {
+          margin-bottom: 2rem;
+        }
+
+        p {
+          margin: 0 0 28px;
+          padding: 0;
+          font-size: 1rem;
+          line-height: 1.875rem;
+        }
+
+        a {
+          color: #ff6418;
+          text-decoration: none;
+          transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out;
+
+          &:hover {
+            color: #252525;
+            text-decoration: none;
+            outline: 0;
+          }
+        }
+
+        ul {
+          margin-bottom: 30px;
+          padding-left: 40px;
+
+          > li {
+            list-style-type: disc;
+          }
+        }
+
+        ol {
+          margin-bottom: 30px;
+          padding-left: 40px;
+
+          > li {
+            list-style-type: decimal;
+          }
+        }
+      }
+    }
+  }
+}

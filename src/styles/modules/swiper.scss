@@ -1,0 +1,27 @@
+.hero.homepage-hero {
+
+    .swiper-pagination {
+        height: 10px;
+        position: absolute;
+        top: 400px;
+
+        @media (min-width: 768px) {
+            top: 510px;
+        }
+
+        @media (min-width: 1024px) {
+            top: 550px;
+        }
+
+        .swiper-pagination-bullet {
+            background: #fff;
+            opacity: .5;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: $amplifiedOrange !important;
+            opacity: 1;
+        }
+
+    }
+}

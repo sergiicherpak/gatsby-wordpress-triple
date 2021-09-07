@@ -1,0 +1,163 @@
+.phone-breakout {
+  position: relative;
+  margin-top: 0;
+  height: 410px;
+  width: 100%;
+  @media (min-width: 768px) {
+    height: 540px;
+  }
+
+  .video-container,
+  img {
+    width: 520px;
+    position: absolute;
+    left: 83%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: inherit;
+    @media (min-width: 375px) {
+      left: 75%;
+    }
+    @media (min-width: 500px) {
+      left: 63%;
+    }
+    @media (min-width: 768px) {
+      width: 680px;
+    }
+    @media (min-width: 1024px) {
+      left: 90%;
+    }
+    @media (min-width: 1280px) {
+      left: 26vw;
+    }
+  }
+
+  img {
+    @media (max-width: 767px) {
+      height: 368px;
+    }
+    @media (min-width: 768px) {
+      height: 481px;
+    }
+  }
+
+  .video-container {
+    height: 368px;
+    @media (min-width: 768px) {
+      height: 410px;
+    }
+  }
+
+  .video {
+    position: absolute;
+    width: 165px;
+    height: 155px;
+    top: 40px;
+    left: 17.5%;
+    transform: skew(-7deg, 0deg);
+    border-radius: 8px;
+    box-shadow: 12px 5px 27px grey;
+    @media (min-width: 768px) {
+      width: 194px;
+      height: 179px;
+      left: 20%;
+    }
+  }
+}
+
+.laptop-breakout {
+  position: relative;
+  width: 100%;
+  opacity: 0;
+  height: 200px;
+
+  > * {
+    width: 100%;
+    object-fit: contain;
+    max-height: 200px;
+  }
+  @media (min-width: 768px) {
+    height: 300px;
+
+    > * {
+      max-height: 300px;
+    }
+  }
+  @media (min-width: 1024px) {
+    height: 400px;
+
+    > * {
+      max-height: 400px;
+    }
+  }
+
+  img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.OTT-breakout {
+  opacity: 0;
+  height: 300px;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    height: 300px;
+
+    > * {
+      max-height: 300px;
+    }
+  }
+  @media (min-width: 1024px) {
+    height: inherit;
+
+    > * {
+      max-height: 474px;
+    }
+  }
+
+  img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .video-container {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+    max-width: 336px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    @media (min-width: 1024px) {
+      height: 400px;
+    }
+  }
+
+  .video {
+    position: absolute;
+    width: 100%;
+    top: -10%;
+    left: -6.5%;
+    transform: rotateY(-22deg) !important;
+    @media (min-width: 1024px) {
+      width: 500px;
+      top: 5%;
+      left: -33%;
+    }
+
+    @media (max-width: 767px) {
+      width: 90%;
+      top: -10%;
+      left: -4.5%;
+    }
+  }
+}

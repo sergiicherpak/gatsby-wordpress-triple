@@ -1,0 +1,127 @@
+.section-transition-container {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+
+  > * {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.section-transition.transition1 {
+  z-index: 1;
+}
+
+.section-transition.transition2 {
+  z-index: 2;
+}
+
+.section-transition.transition3 {
+  z-index: 3;
+}
+
+.section-transition.white {
+  background: white;
+}
+
+.homepage-section-transition-container {
+  .section-transition {
+    opacity: 0;
+  }
+
+  .section-transition.transition1 {
+    background-image: url("/images/vapors/Vapors_100x100_PinkOrange_Blur_V02.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    opacity: 1;
+    @media (min-width: 1024px) {
+      background-size: 83%;
+      background-position: 160%;
+    }
+  }
+
+  .section-transition.transition2 {
+    background-image: url("/images/vapors/Vapors_100x100_Heritageblue.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+  }
+}
+
+.productpage-section-transition-container {
+  .section-transition.section1 {
+    background-image: url("/images/vapors/Vapors_500x_YellowBlue.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    @media (min-width: 1024px) {
+      background-size: 73%;
+      background-position: 180% 70%;
+    }
+  }
+
+  .section-transition.white {
+    background: white;
+    opacity: 0;
+  }
+}
+
+.technologypage-section-transition-container {
+  .section-transition.section1 {
+    background-image: url("/images/vapors/Vapors_100x100_Heritageblue.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    @media (min-width: 1024px) {
+      background-size: 73%;
+      background-position: 140% 70%;
+    }
+  }
+
+  .section-transition.section2 {
+    background: $gradientDark2;
+    opacity: 0;
+  }
+}
+
+.ideaspage-section-transition-container {
+  .section-transition.white {
+    background-image: url("/images/vapors/Vapors_10x10_PinkYellow.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: 160%;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: -90% -20%;
+    margin: 0;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-bottom: 4vw;
+    min-height: 600px;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 80px;
+    position: relative;
+    @media (min-width: 1024px) {
+      background-position-x: -50%;
+      background-position-y: 0;
+    }
+  }
+
+  .section-transition.gradientDark1 {
+  }
+}
